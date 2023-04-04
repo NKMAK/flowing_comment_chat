@@ -110,7 +110,6 @@ function latestCommentSelection(responseCommentData){
     for(let i=0; i<responseCommentData.items.length; i++){
         if(lastTime<new Date(responseCommentData.items[i].time)){
             commentArray.push(responseCommentData.items[i].comment);
-            //あとでなおす（余裕があれば）
             if(commentArray.length>70){
                 commentArray.shift();
             }
